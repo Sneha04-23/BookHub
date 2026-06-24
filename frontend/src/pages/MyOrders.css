@@ -1,0 +1,224 @@
+.orders-page {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px;
+    background: #f8fafc;
+    min-height: 100vh;
+}
+
+/* HEADER */
+.orders-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #fff;
+    padding: 18px 22px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.orders-header h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #1f2937;
+}
+
+/* BACK BUTTON */
+.back-btn {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 29px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+
+    transform: scale(1.05);
+}
+
+.seller {
+    width: 90%;
+    margin: 6px 2px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(191, 225, 236);
+
+}
+
+.seller p{
+    color: #374151;
+    font-weight: 500;
+}
+
+/* GRID */
+.orders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 20px;
+}
+
+/* CARD */
+.order-card {
+    display: flex;
+    gap: 15px;
+    background: white;
+    padding: 18px;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.order-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+/* IMAGE */
+.order-card img {
+    width: 110px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+/* DETAILS */
+.book-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #111827;
+}
+
+.author {
+    color: #6b7280;
+    margin: 5px 0;
+}
+
+.price {
+    color: #16a34a;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.date {
+    color: #4b5563;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* STATUS */
+.status {
+    display: inline-block;
+    width: fit-content;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* Pending */
+.status.Pending {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+/* Paid */
+.status.Paid {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+/* Shipped */
+.status.Shipped {
+    background: #ede9fe;
+    color: #6d28d9;
+}
+
+/* Delivered */
+.status.Delivered {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+/* Cancelled */
+.status.Cancelled {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+/* CANCEL BUTTON */
+.cancel-btn_ {
+    border: none;
+    background: #ef4444;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.cancel-btn_:hover {
+    background: #dc2626;
+}
+
+/* EMPTY STATE */
+.empty-orders {
+    text-align: center;
+    background: white;
+    padding: 60px 30px;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.empty-orders h3 {
+    font-size: 24px;
+    color: #374151;
+}
+
+.empty-orders p {
+    color: #6b7280;
+    margin-top: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .orders-page {
+        padding: 15px;
+    }
+
+    .orders-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .order-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .order-card img {
+        width: 140px;
+        height: 190px;
+    }
+
+    .book-details {
+        align-items: center;
+    }
+}

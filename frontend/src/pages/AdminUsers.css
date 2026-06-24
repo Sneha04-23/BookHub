@@ -1,0 +1,96 @@
+/* Main layout */
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f6fb;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.page-title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+/* Users grid */
+.users-grid-ad {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* User card */
+.user-card-ad{
+  background: rgb(232, 243, 231);
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.user-info-ad h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #111827;
+}
+
+.user-info-ad p {
+  margin: 5px 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Role badge */
+.role {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 11px;
+  border-radius: 20px;
+  margin-top: 6px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Role colors */
+.role.admin {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.role.user {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+/* Delete button */
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+  transform: scale(1.05);
+}

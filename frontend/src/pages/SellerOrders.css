@@ -1,0 +1,227 @@
+.seller-orders-page {
+    /* max-width: 1200px; */
+    margin: auto;
+    padding: 25px;
+    background: #f8fafc;
+    min-height: 100vh;
+}
+
+/* TOP BAR */
+.top-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #fff;
+    padding: 18px 22px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.top-bar h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #1f2937;
+}
+
+/* BACK BUTTON */
+
+.back-btn:hover {
+    background: #ffffff;
+    transform: scale(1.05);
+}
+
+/* GRID */
+.order-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* CARD */
+.orders-card {
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border-left: 5px solid #036b08fd;
+    border-bottom: 5px solid #045e09;
+    max-width: 450px;
+}
+
+.orders-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* ORDER INFO */
+.order-info {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.order-info img {
+    width: 95px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+/* BOOK INFO */
+.book-info {
+    padding: 20px;
+}
+
+.book-info h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    color: #111827;
+}
+
+.book-info p {
+    margin: 4px 0;
+}
+
+.author {
+    color: #6b7280;
+}
+
+.price {
+    color: #16a34a;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* BUYER */
+.buyer {
+    display: inline-block;
+    background: #ecfdf5;
+    color: #065f46;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* ORDER META */
+.order-meta {
+    display: flex;
+    justify-content: space-between;
+    background: #f9fafb;
+    padding: 10px 12px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    color: #4b5563;
+    font-size: 14px;
+}
+
+/* STATUS */
+.status {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* Pending */
+.status.Pending {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+/* Paid */
+.status.Paid {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+/* Shipped */
+.status.Shipped {
+    background: #ede9fe;
+    color: #6d28d9;
+}
+
+/* Delivered */
+.status.Delivered {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+/* Cancelled */
+.status.Cancelled {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+/* DROPDOWN */
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+select:hover {
+    border-color: #108f21;
+}
+
+select:focus {
+    border-color: #0b822e;
+    box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+}
+
+/* DISABLED */
+select:disabled {
+    background: #f3f4f6;
+    color: #6b7280;
+    cursor: not-allowed;
+}
+
+/* EMPTY STATE */
+.empty {
+    background: white;
+    padding: 50px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.empty p {
+    font-size: 20px;
+    color: #6b7280;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .seller-orders-page {
+        padding: 15px;
+    }
+
+    .order-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .order-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .order-info img {
+        width: 120px;
+        height: 160px;
+    }
+
+    .order-meta {
+        flex-direction: column;
+        gap: 6px;
+    }
+}

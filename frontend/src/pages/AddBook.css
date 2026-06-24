@@ -1,0 +1,317 @@
+/* .addbook-page{
+
+    min-height: 100vh;
+
+    background: #f5f5f5;
+
+    padding: 40px 20px;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.addbook-container{
+
+    width: 100%;
+    max-width: 700px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.addbook-container h1{
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    color: #6c47ff;
+}
+
+.addbook-form{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.addbook-form input,
+.addbook-form textarea,
+.addbook-form select{
+
+    padding: 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.addbook-form textarea{
+
+    resize: none;
+
+    height: 120px;
+}
+
+.addbook-form button{
+
+    padding: 15px;
+
+    border: none;
+
+    background: #6c47ff;
+
+    color: white;
+
+    font-size: 18px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.addbook-form button:hover{
+
+    background: #5636d6;
+}
+
+@media(max-width:600px){
+
+    .addbook-container{
+
+        padding: 25px;
+    }
+
+} */
+
+
+
+
+
+.addbook-page{
+    min-height:100vh;
+    background:#f5f5f5;
+    padding:40px 20px;
+    display:flex;
+    justify-content:center;
+}
+
+.addbook-container{
+    width:100%;
+    max-width:1000px;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.08);
+}
+
+.addbook-container h1{
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+.addbook-form{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.form-group label{
+    font-size:18px;
+    font-weight:600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:12px;
+    font-size:16px;
+    outline:none;
+}
+
+.form-group textarea{
+    min-height:120px;
+    resize:none;
+}
+
+.price-row{
+    display:grid;
+    grid-template-columns:1fr 1fr auto;
+    gap:20px;
+    align-items:end;
+}
+
+.other-row{
+    display:grid;
+    grid-template-columns:1fr 1fr auto;
+    gap:20px;
+    align-items:end;
+}
+
+.suggest-btn{
+    height:55px;
+    padding:0 25px;
+    border:none;
+    border-radius:12px;
+    background:#00b300;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.suggest-btn:hover{
+    background:#009900;
+}
+
+.upload-box{
+    border:2px dashed #bbb;
+    padding:40px;
+    border-radius:16px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.upload-box:hover{
+    border-color:#00b300;
+}
+
+.upload-icon{
+    font-size:40px;
+    color:#00b300;
+}
+
+.upload-box p{
+    margin-top:10px;
+    font-weight:600;
+    color:#00b300;
+}
+
+.button-group{
+    display:flex;
+    justify-content:flex-end;
+    gap:20px;
+}
+.submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+.cancel-btn{
+    padding:14px 30px;
+    border:none;
+    border-radius:10px;
+    background:#ddd;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.submit-btn{
+    padding:14px 30px;
+    border:none;
+    border-radius:10px;
+    background:#00b300;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+}
+
+.submit-btn:hover{
+    background:#009900;
+}
+
+.preview-image{
+    width: 100%;
+    max-width: 220px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.upload-box{
+    width: 100%;
+    min-height: 250px;
+    border: 2px dashed #cfd8e3;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.3s;
+    overflow: hidden;
+    background: #fafcff;
+}
+
+.upload-box:hover{
+    border-color: #3bb54a;
+    background: #f4fff5;
+}
+
+
+/* MOBILE */
+
+@media(max-width:820px){
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
+    .price-row{
+        grid-template-columns:1fr;
+    }
+
+    .other-row{
+        grid-template-columns: 3fr;
+    }
+
+    .addbook-container{
+        padding:20px;
+    }
+
+    .addbook-container h1{
+        font-size:30px;
+    }
+
+    .button-group{
+        flex-direction:column;
+    }
+
+    .cancel-btn,
+    .submit-btn{
+        width:100%;
+    }
+}

@@ -1,0 +1,277 @@
+.home-page{
+    width: 100%;
+    min-height: 100vh;
+
+    background: #f8f8f8;
+}
+
+.hero{
+    width: 100%;
+
+    /* min-height: 80vh;
+    max-height: 80vh; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 60px 8%;
+}
+
+.hero-left{
+   width: 30%;
+}
+
+.hero-left h1{
+    font-size: 60px;
+
+    line-height: 1.5;
+    
+    font-family:s;
+
+    margin-bottom: 25px;
+
+    color: #222;
+}
+
+.hero-left p{
+    font-size: 18px;
+
+    max-width: 600px;
+
+    line-height: 1.7;
+    font-family: cursive;
+
+    color: #464545;
+
+    margin-bottom: 35px;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.browse-btn,.sell-btn{
+    height: 50px;
+    width: 150px;
+
+    padding: 0 30px;
+
+    border: 1px solid rgb(221, 216, 216);
+    border-radius: 12px;
+
+    font-size: 16px;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.browse-btn{
+    background: #3ae33d;
+    color: white;
+}
+
+.sell-btn{
+    background: white;
+    border: 1px solid #000000;
+}
+
+.hero-right{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.hero-right img{
+    width: 500px;
+}
+/*---BOOK PAGE-------------------------------------------------------------------------*/
+
+.book-page{
+    padding:  30px  8%;
+    padding-top: 40px;
+
+}
+.book-page h2{
+    font-size: 40px;
+
+    margin-bottom: 30px;
+}
+.books-books{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*----CATEGORY SECTION-------------------------------------------------------------*/
+
+.category-section{
+    padding:  30px  8%;
+    padding-top: 40px;
+}
+
+.category-section h2{
+    font-size: 40px;
+
+    margin-bottom: 30px;
+}
+
+.category-grid{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+
+    gap: 25px;
+}
+
+.category-card{
+    /* background: rgb(186, 75, 75); */
+
+    border-radius: 20px;
+
+    padding: 40px 25px;
+
+    width: 100%;
+    border: 2px solid black;
+    background-color: rgba(64, 255, 17, 0.205);
+
+    box-shadow: 0 3px 1px rgba(0,0,0,0.6);
+
+    transition: 0.2s;
+
+    cursor: pointer;
+}
+
+.category-card:hover{
+    transform: translateY(-5px);
+}
+
+.category-card h3{
+    font-size: 28px;
+
+    margin-bottom: 10px;
+
+    color: #3c2f2f;
+}
+
+.category-card p{
+    color: #2c202096;
+
+    font-size: 18px;
+}
+.view-more{
+    display: flex;
+    
+    /* justify-content: flex-end; */
+    justify-content: flex-end;
+    
+
+    margin-bottom: 20px;
+}
+
+.view-more-btn1 {
+    width: 55px;
+    height: 55px;
+
+    border: none;
+    border-radius: 100%;
+
+    background: #335f2e1b;
+
+    color: rgb(0, 0, 0);
+
+    font-size: 42px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+    transition: 0.3s;
+}
+
+.view-more-btn1:hover{
+    background: #55904edb;
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+/*---------- RESPONSIVE ---------------------------------------------------------------*/
+
+@media(max-width: 900px) {
+
+    .home-page{
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 40px;
+    }
+
+    .hero-left{
+        width: 100%;
+    }
+
+    .hero-left h1{
+        font-size: 45px;
+    }
+
+    .hero-left p{
+        font-size: 18px;
+
+    }
+
+    .hero-buttons{
+        justify-content: center;
+         width: 100%;
+    }
+    .hero-right img{
+        /* width: 320px; */
+        display: none;
+    }
+
+    .category-section h2{
+        text-align: center;
+    }
+}
+
+@media(max-width:600px){
+    .hero-left h1{
+        font-size: 36px;
+    }
+
+    .hero-left p{
+        font-size: 16px;
+    }
+
+    .browse-btn,.sell-btn{
+        width: 100%;
+    }
+
+    .hero-buttons{
+        flex-direction: column;
+    }
+    .hero-right img {
+        width: 250px;
+    }
+
+    .category-section {
+        padding: 40px 20px;
+    }
+
+    .category-grid{
+        grid-template-columns: 1fr;
+    }
+    .category-card{
+        text-align: center;
+    }
+}

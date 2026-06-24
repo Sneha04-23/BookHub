@@ -1,0 +1,99 @@
+.admin-orders {
+    display:flex;
+    min-height:100vh;
+    background:#f4f6f9;
+}
+
+.admin-orders h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #222;
+}
+.main-content1 {
+    flex: 1;
+    padding: 25px;
+}
+
+/* Title */
+.main-content1 h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #111827;
+}
+
+/* Order card */
+.order-card1 {
+    background: white;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: 0.2s ease;
+}
+
+.order-card1:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Sections */
+.order-card1 div {
+    flex: 1;
+}
+
+.order-card1 h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #111827;
+}
+
+.order-card1 p {
+    margin: 3px 0;
+    color: #4b5563;
+    font-size: 14px;
+}
+
+/* Status + date */
+.order-card1 small {
+    color: #6b7280;
+}
+
+/* Better spacing for buyer/seller blocks */
+.order-card1 div:nth-child(2),
+.order-card1 div:nth-child(3), 
+.order-card1 div:nth-child(4) {
+    border-left: 2px solid #544848;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .admin-orders {
+        flex-direction: column;
+    }
+
+    .sidebar-admin {
+        width: 50%;
+        height: auto;
+        position: relative;
+    }
+
+    .order-card1 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .order-card1 div:nth-child(2),
+    .order-card1 div:nth-child(3),
+    .order-card1 div:nth-child(3) {
+        border-left: none;
+        padding: 5px;
+    }
+}

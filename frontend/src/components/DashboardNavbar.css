@@ -1,0 +1,137 @@
+.dashboard-navbar{
+
+    height: 70px;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 40px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* LOGO */
+.dashboard-logo{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.home{
+    padding: 12px;
+    font-size: 19px;
+    cursor: pointer;
+    color: rgb(150, 149, 149);
+}
+.dashboard-logo h1{
+
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.dashboard-logo span{
+
+    color: #5b3df5;
+}
+
+
+/* SEARCH */
+
+.dashboard-search{
+
+    width: 420px;
+    height: 42px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 15px;
+
+    background: #fff;
+}
+
+.dashboard-search input{
+
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    font-size: 15px;
+}
+
+.dashboard-search-icon{
+
+    color: gray;
+    cursor: pointer;
+}
+
+
+/* RIGHT */
+
+.dashboard-right{
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.side-navbar{
+    display: flex;
+}
+
+/* BELL */
+
+.dashboard-bell{
+
+    position: relative;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+.dashboard-bell span{
+
+    position: absolute;
+
+    top: -8px;
+    right: -10px;
+
+    width: 18px;
+    height: 18px;
+
+    background: red;
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 11px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* PROFILE */
+
+.dashboard-profile img{
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    cursor: pointer;
+}

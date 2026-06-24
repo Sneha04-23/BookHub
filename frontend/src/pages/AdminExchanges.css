@@ -1,0 +1,125 @@
+.page-header{
+    margin-bottom:20px;
+}
+
+.page-header h2{
+    margin:0;
+    font-size:28px;
+}
+
+.page-header p{
+    color:#777;
+}
+
+/* GRID */
+
+.exchange-grid-ad{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+/* CARD */
+
+.exchange-card-ad{
+    background:#ffffff;
+    border-radius:18px;
+    padding:20px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    transition:0.3s;
+    border:1px solid #eee;
+}
+
+.exchange-card-ad:hover{
+    transform:translateY(-5px);
+}
+
+/* STATUS */
+
+.status-chip{
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:600;
+    display:inline-block;
+}
+
+.status-chip.pending{
+    background:#fff7cc;
+    color:#a17b00;
+}
+
+.status-chip.accepted{
+    background:#d1fae5;
+    color:#065f46;
+}
+
+.status-chip.rejected{
+    background:#fee2e2;
+    color:#991b1b;
+}
+
+.status-chip.completed{
+    background:#dbeafe;
+    color:#1e40af;
+}
+
+/* BODY */
+
+.exchange-body-ad{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin:15px 0;
+}
+
+.book-block{
+    flex:1;
+}
+
+.book-block p{
+    font-size:12px;
+    color:#888;
+    margin:0;
+}
+
+.book-block h4{
+    margin:5px 0 0;
+    font-size:14px;
+    color:#222;
+}
+
+.swap-icon1{
+    font-size:20px;
+    padding:0 10px;
+    color:#12662e;
+}
+
+/* USERS */
+
+.exchange-users{
+    display:flex;
+    justify-content:space-between;
+    margin-top:10px;
+    padding-top:10px;
+    border-top:1px solid #eee;
+}
+
+.exchange-users span{
+    font-size:12px;
+    color:#888;
+}
+
+.exchange-users h5{
+    margin:3px 0 0;
+    font-size:14px;
+}
+
+/* FOOTER */
+
+.exchange-footer{
+    margin-top:10px;
+    text-align:right;
+    color:#aaa;
+    font-size:11px;
+}

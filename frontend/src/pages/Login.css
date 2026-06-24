@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -------------PAGE------------------------------------------------------------------ */
+
+.login-page{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+
+    background: #f7f7f7;
+}
+
+/* -----------LEFT-SIDE---------------------------------------------------------------------------------- */
+
+.login-left{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+.login-left h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+
+    color: #222;
+}
+
+.login-left p{
+
+    font-size: 20px;
+
+    text-align: center;
+
+    max-width: 500px;
+
+    line-height: 1.7;
+
+    color: #666;
+}
+
+.login-image{
+    width: 420px;
+
+    margin-top: 40px;
+
+}
+
+/* ------------- RIGHT SIDE --------------------------------------------------------------------------- */
+
+.login-right{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/*----------- CARD ---------------------------------------------------------------------------------------*/
+
+.login-card{
+    width: 450px;
+
+    background: white;
+
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.login-card h2{
+    font-size: 38px;
+
+    margin-bottom: 10px;
+
+    color: #222;
+}
+
+/*---------- INPUT -------------------------------------------------------------------------------------------------*/
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.input-group label{
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.login-card input{
+    width: 100%;
+    height: 55px;
+
+    border: 1px solid #ddd;
+    border-radius: 12px;
+
+    padding: 0 20px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+.login-card input:focus{
+    border-color: #3aaa35;
+}
+
+/*------ BUTTON -------------------------------------------------------------------------*/
+
+.login-card button{
+    width: 100%;
+    height: 55px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #3aaa35;
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.login-card button:hover{
+    background: #2f912a;
+}
+
+/*---------- BOTTOM TEXT ----------------------------------------------------------------------------------------------*/
+
+.login-subtext{
+    text-align: center;
+
+    margin-top: 10px;
+
+    color: #555;
+}
+
+.login-subtext span{
+    color: #3aaa35;
+
+    margin-left: 6px;
+
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/*--------- PESPONSIVE ------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width :1000px){
+    .login-page{
+        flex-direction: column;
+    }
+
+    .login-left{
+        padding: 30px 20px;
+    }
+    .login-left h1{
+        font-size: 42px;
+        text-align: center;
+    }
+    .login-left p{
+        font-size: 18px;
+    }
+    .login-image{
+        display: none;
+    }
+
+    .login-card{
+        width: 60%;
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width :800px) {
+    .login-left {
+        display: none;
+    }
+    .login-image{
+        display: none;
+    }
+    .login-card{
+        width: 70%;
+        padding: 30px 20px;
+    }
+    .login-card h2{
+        font-size: 28px;
+    }
+    .login-card input{
+        height: 50px;
+    }
+
+    .login-card button{
+        height: 50px;
+    }
+}
