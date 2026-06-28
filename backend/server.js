@@ -11,12 +11,17 @@ const http = require("http");
 
 const server = http.createServer(app);
 
-
 const { Server } = require("socket.io");
+
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://book-hub-nine-kappa.vercel.app",
+  "https://book-b804x90ff-sneha04-23s-projects.vercel.app"
+];
 
 const io = new Server(server, {
     cors: {
-        origin:process.env.CLIENT_URL,
+        origin: allowedOrigins,
         methods:["GET", "POST"],
         credentials: true
     }
@@ -25,7 +30,14 @@ const io = new Server(server, {
 
 
 app.use(cors({
-    origin: process.env.CLIENT_URL,
+    // origin: process.env.CLIENT_URL,
+    origin: function (origin, callback) {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error("Not allowed by CORS"));
+        }
+    },
     credentials:true,
 }));
 app.use(express.json())

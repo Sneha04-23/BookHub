@@ -46,9 +46,7 @@ function Signup(){
             setModalMessage("Account Created Successfully");
             setShowModal(true)
 
-            // setTimeout(() => {
-            //     navigate("/")
-            // }, 1500);
+
 
         } catch(err){
 
