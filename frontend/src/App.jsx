@@ -22,7 +22,7 @@ import Chats from "./pages/Chats";
 import Notification from "./pages/Notification";
 // import MyBook from "./pages/myOrders";
 import SellerOrders from "./pages/SellerOrders";
-import MyOrders from "./pages/myOrders";
+import MyOrders from "./pages/MyOrders";
 import MyExchangeRequests from "./pages/ExchangeRequests";
 import AdminDashboard from "./pages/AdminDashboard";
 import AdminUsers from "./pages/AdminUsers";
