@@ -104,8 +104,24 @@ function Navbar() {
 
             <ul className="nav-links">
                 <li onClick={() => navigate("/")}>Home</li>
-                <li onClick={() => navigate("/books")}>Books</li>
-                <li onClick={() => navigate("/categories")} >Categories</li>
+                <li onClick={() =>{
+                    if (!isLoggedIn) {
+                        navigate("/login");
+                        return;
+                    }
+
+                    navigate("/books")}
+                    }
+                >Books</li>
+                <li onClick={() =>{
+                    if (!isLoggedIn) {
+                        navigate("/login");
+                        return;
+                    }
+
+                    navigate("/categories")
+                }} 
+                >Categories</li>
             </ul>
 
             <div className="nav-right">
