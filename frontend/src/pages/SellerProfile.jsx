@@ -72,7 +72,7 @@ function SellerProfile() {
                         src={
                             seller.image
                             ? seller.image
-                            : "https://i.pravatar.cc/150"
+                            : "https://ui-avatars.com/api/?name=" + encodeURIComponent(seller?.name || "User")
                         }
                         alt=""
                     />

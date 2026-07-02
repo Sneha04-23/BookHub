@@ -97,7 +97,7 @@ function EditProfile() {
                             ? URL.createObjectURL(image)
                             : user.image
                             ? user.image
-                            : "https://i.pravatar.cc/150"
+                            : "https://ui-avatars.com/api/?name=" + encodeURIComponent(user?.name || "User")
                         }
                         alt=""
                     />

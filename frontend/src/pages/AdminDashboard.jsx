@@ -160,7 +160,7 @@ function AdminDashboard() {
                             src={
                                 user.image
                                 ?  user.image
-                                : "https://i.pravatar.cc/40"
+                                : "https://ui-avatars.com/api/?name=" + encodeURIComponent(user?.name || "User")
                             }
                             alt=""
                         />
