@@ -15,7 +15,7 @@ const { Server } = require("socket.io");
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://book-hub-nine-kappa.vercel.app",
+    "https://book-hub-nine-kappa.vercel.app",
   "https://book-b804x90ff-sneha04-23s-projects.vercel.app"
 ];
 
