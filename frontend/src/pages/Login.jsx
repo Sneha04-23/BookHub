@@ -84,7 +84,7 @@ function Login(){
             <div className="login-right">
 
                 <div className="login-card">
-                    <h2>Login to BookHub</h2>
+                    <h2>Login</h2>
 
                     <p className="login-subtext">
                         Don't have an account?
