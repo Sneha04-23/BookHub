@@ -173,20 +173,20 @@ body{
     }
 
     .login-left{
-        padding: 30px 20px;
+       display: none;
     }
     .login-left h1{
         font-size: 30px;
     }
     .login-left p{
-        font-size: 18px;
+        padding: 40px 25px;
     }
     .login-image{
         display: none;
     }
 
-    .login-card{
-        font-size: 35px;
+    .login-card h2{
+         font-size: 35px;
     }
 }
 
