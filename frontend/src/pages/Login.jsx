@@ -21,6 +21,9 @@ function Login(){
     const [email, setEmail] = useState("");
     const [password, setPassword]  = useState("");
 
+    const bookImage = "https://res.cloudinary.com/dizdyqvus/image/upload/v1781197586/book1_ow9mwm.png"
+
+
     const handleLogin = async() => {
         try{
 
@@ -69,7 +72,7 @@ function Login(){
                 <p>Login to continue buying, selling and exchanging your books.</p>
 
                 <img 
-                    src={loginImage}
+                    src={bookImage}
                     alt="books"
                     className="login-image" 
                 />

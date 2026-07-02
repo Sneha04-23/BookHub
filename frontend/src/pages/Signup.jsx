@@ -21,6 +21,9 @@ function Signup(){
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
+    const bookImage = "https://res.cloudinary.com/dizdyqvus/image/upload/v1781197586/book1_ow9mwm.png"
+
+
     const handleSignup = async () => {
 
         try{
@@ -78,7 +81,7 @@ function Signup(){
                 </p>
 
                 <img
-                    src={signupImage}
+                    src={bookImage}
                     alt="books"
                     className="signup-image"
                 />
